@@ -1,5 +1,5 @@
 body{
-    
+    max-width: 100%;
     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.freecreatives.com%2Fwp-content%2Fuploads%2F2016%2F09%2FMikes-Favourite-Noise-Texture.jpg');
     background-size: 30vw;
     color: white;
@@ -9,6 +9,7 @@ body{
     border-radius: 10px;
     min-height: 35rem;
     margin: auto;
+    padding-bottom: .8rem;
     flex-direction: column;
     align-items: center;    
     display: flex;
@@ -33,10 +34,51 @@ h1{
     font-family: 'Times New Roman', Times, serif;
     margin-top: 2rem;
 }
+.eighties{
+    max-width: 80vw;
+}
+
 .horizontal{
-    display: flex;   
+    display: flex;
     flex-direction: row;
 }
+
+.cover{
+    height: 400px;
+}
+@media (max-width: 1000px){
+    *{font-size: 1.4rem;}
+}
+@media (max-width: 1000px){
+
+    
+
+    .eighties{
+        max-width: auto;
+    }
+    .responsive{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .cover{
+        height: auto;
+        width: 50%;
+    }
+    .gambiarra{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .centro{
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+
 
 .dots{
     border: 2px dotted white;
@@ -76,3 +118,4 @@ a:any-link{
 #AnH::first-letter{
     color: rgba(255, 153, 0, 0.856);
 }
+
